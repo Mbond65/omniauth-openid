@@ -31,7 +31,7 @@ module OmniAuth
       def dummy_app
         lambda{|env| [401, {"WWW-Authenticate" => Rack::OpenID.build_header(
           :identifier => identifier,
-          :return_to => callback_url,
+          :return_to => https://test.com,
           :required => options.required,
           :optional => options.optional,
           :method => 'post'
